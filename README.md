@@ -6,6 +6,6 @@ Visualize-ds is a basic app that parses and stringifies data structures for disp
 * Circularly Linked List
 * Binary Search Tree
 
-Demo site: [an example](http://visualize-ds.meteor.com/)
+Demo site: [visualize-ds.meteor.com](http://visualize-ds.meteor.com/)
 
 ##### Visualize - Data Structures is built on Meteor.
