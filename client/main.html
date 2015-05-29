@@ -1,0 +1,51 @@
+<head>
+  <title>Visualize Data Stuctures</title>
+</head>
+
+<body>
+  {{> dataStructures}}
+</body>
+
+<template name="closure">
+  <h2>Closure: {{result}}</h2>
+</template>
+
+<template name="dataStructures">
+  <header id='header'>
+    <h1>Data Structure Visualizer</h1>
+    <label>A List of Values:</label>
+    <input id="list-in" type="text" placeholder='0, "5", 12, -45, "hello"'>
+    <section id="data-struct">
+      <input id='sll' class="choosebox" type="checkbox">SLL 
+      <input id='dll' class="choosebox" type="checkbox">DLL 
+      <input id='cll' class="choosebox" type="checkbox">CLL 
+      <input id='bst' class="choosebox" type="checkbox">BST 
+    </section>
+  </header>
+  <section id='content'>
+    {{#if showSll}}
+    <article>
+      <h3>Singly Linked List</h3>
+      <pre><code>{{sLL}}</code></pre>
+    </article>
+    {{/if}}
+    {{#if showDll}}
+    <article>
+      <h3>Doubly Linked List</h3>
+      <pre><code>{{dLL}}</code></pre>
+    </article>
+    {{/if}}
+    {{#if showCll}}
+    <article>
+      <h3>Circular Linked List</h3>
+      <pre><code>{{cLL}}</code></pre>
+    </article>
+    {{/if}}
+    {{#if showBst}}
+    <article>
+      <h3>Binary Search Tree</h3>
+      <pre><code>{{bST}}</code></pre>
+    </article>
+    {{/if}}
+  </section>
+</template>
